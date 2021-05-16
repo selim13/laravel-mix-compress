@@ -1,4 +1,6 @@
 .test {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     font-size: 1em;
     background: url(./vector.svg);
 }

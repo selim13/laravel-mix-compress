@@ -16,7 +16,7 @@
     "bugs": "https://github.com/selim13/laravel-mix-compress/issues",
     "main": "index.js",
     "scripts": {
-        "test": "mix --mix-config ./test/webpack.mix.js --production"
+        "test": "mix --mix-config ./test/webpack.mix.js --production && ./test/test.sh"
     },
     "dependencies": {
         "@gfx/zopfli": "^1.0.15",
