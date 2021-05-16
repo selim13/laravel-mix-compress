@@ -1,0 +1,38 @@
+{
+    "name": "laravel-mix-compress",
+    "version": "1.0.0",
+    "description": "Laravel Mix extension for compressing assets with Brotli and Zopfli",
+    "keywords": [
+        "laravel mix",
+        "mix",
+        "compress",
+        "brotli",
+        "zopfli"
+    ],
+    "author": "Dmitry Seleznyov",
+    "license": "MIT",
+    "repository": "selim13/laravel-mix-compress",
+    "homepage": "https://github.com/selim13/laravel-mix-compress",
+    "bugs": "https://github.com/selim13/laravel-mix-compress/issues",
+    "main": "index.js",
+    "scripts": {
+        "test": "mix --mix-config ./test/webpack.mix.js --production"
+    },
+    "dependencies": {
+        "@gfx/zopfli": "^1.0.15",
+        "compression-webpack-plugin": "^7.1.2"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.14",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "laravel-mix": "^6.0.19",
+        "postcss": "^8.1",
+        "prettier": "^2.3.0"
+    },
+    "peerDependencies": {
+        "laravel-mix": "^6.0.19"
+    },
+    "engines": {
+        "node": ">=12.14.0"
+    }
+}
