@@ -1,3 +1,4 @@
-package-lock.json
-
 test/
+.vscode/
+
+package-lock.json
