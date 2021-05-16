@@ -57,3 +57,11 @@ Common CompressionWebpackPlugin [options](https://webpack.js.org/plugins/compres
 - `threshold`: only assets bigger than this size are processed. In bytes.
 - `minRatio`: only assets that compress better than this ratio are processed
 - `deleteOriginalAssets`: whether to delete the original assets or not.
+
+
+## Test
+
+```sh
+npm ci
+npm test
+```
