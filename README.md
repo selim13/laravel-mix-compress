@@ -2,6 +2,25 @@
 
 Prepares Brotli and Zopfli compressed versions of assets using CompressionWebpackPlugin.
 
+```
+ Size Name
+230Ki app.js
+ 55Ki app.js.br
+ 60Ki app.js.gz
+839Ki app.js.map
+175Ki app.js.map.br
+194Ki app.js.map.gz
+170Ki styles.css
+ 26Ki styles.css.br
+ 30Ki styles.css.gz
+302Ki styles.css.map
+ 46Ki styles.css.map.br
+ 52Ki styles.css.map.gz
+  634 sprite.svg
+  285 sprite.svg.br
+  313 sprite.svg.gz
+```
+
 
 ## Install
 
