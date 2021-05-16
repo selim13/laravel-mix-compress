@@ -26,13 +26,32 @@
         "browser-sync": "^2.26.14",
         "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.19",
+        "lint-staged": "^11.0.0",
         "postcss": "^8.1",
-        "prettier": "^2.3.0"
+        "prettier": "^2.3.0",
+        "simple-git-hooks": "^2.4.1"
     },
     "peerDependencies": {
         "laravel-mix": "^6.0.19"
     },
     "engines": {
         "node": ">=12.14.0"
+    },
+    "simple-git-hooks": {
+        "pre-commit": "npx lint-staged"
+    },
+    "lint-staged": {
+        "*.js": [
+            "prettier --write"
+        ]
+    },
+    "prettier": {
+        "endOfLine": "lf",
+        "singleQuote": true,
+        "tabWidth": 4,
+        "semi": true,
+        "trailingComma": "none",
+        "printWidth": 90,
+        "arrowParens": "avoid"
     }
 }
