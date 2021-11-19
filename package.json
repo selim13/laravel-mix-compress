@@ -23,16 +23,16 @@
         "compression-webpack-plugin": "^9.0.1"
     },
     "devDependencies": {
-        "browser-sync": "^2.27.5",
+        "browser-sync": "^2.27.7",
         "browser-sync-webpack-plugin": "^2.3.0",
-        "laravel-mix": "^6.0.34",
-        "lint-staged": "^11.2.3",
+        "laravel-mix": "^6.0.39",
+        "lint-staged": "^12.0.3",
         "postcss": "^8.3",
         "prettier": "^2.4.1",
-        "simple-git-hooks": "^2.6.1"
+        "simple-git-hooks": "^2.7.0"
     },
     "peerDependencies": {
-        "laravel-mix": "^6.0.34"
+        "laravel-mix": "^6.0.39"
     },
     "engines": {
         "node": ">=12.14.0"
