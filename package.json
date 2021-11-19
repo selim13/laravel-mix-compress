@@ -1,6 +1,6 @@
 {
     "name": "laravel-mix-compress",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Laravel Mix extension for compressing assets with Brotli and Zopfli",
     "keywords": [
         "laravel mix",
@@ -20,7 +20,7 @@
     },
     "dependencies": {
         "@gfx/zopfli": "^1.0.15",
-        "compression-webpack-plugin": "^9.0.0"
+        "compression-webpack-plugin": "^9.0.1"
     },
     "devDependencies": {
         "browser-sync": "^2.27.5",
