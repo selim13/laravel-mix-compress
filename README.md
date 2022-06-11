@@ -1,6 +1,6 @@
 # Laravel Mix Compress Extension
 
-Prepares Brotli and Zopfli compressed versions of assets using CompressionWebpackPlugin.
+Prepares Brotli and Zopfli compressed versions of assets using [CompressionWebpackPlugin](https://github.com/webpack-contrib/compression-webpack-plugin).
 
 ```
  Size Name
