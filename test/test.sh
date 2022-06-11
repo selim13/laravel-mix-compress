@@ -2,18 +2,16 @@
 
 set -e
 
-[ -f "test/dist/app.js" ]
-[ -f "test/dist/app.js.gz" ]
-[ -f "test/dist/app.js.br" ]
-[ -f "test/dist/app.js.map" ]
-[ -f "test/dist/app.js.map.gz" ]
-[ -f "test/dist/app.js.map.br" ]
-[ -f "test/dist/style.css" ]
-[ -f "test/dist/style.css.gz" ]
-[ -f "test/dist/style.css.br" ]
-[ -f "test/dist/style.css.map" ]
-[ -f "test/dist/style.css.map.gz" ]
-[ -f "test/dist/style.css.map.br" ]
-[ -f "test/dist/images/vector.svg" ]
-[ -f "test/dist/images/vector.svg.gz" ]
-[ -f "test/dist/images/vector.svg.br" ]
+test_file() {
+    local file="$1"
+
+    [ -f "$file" ]
+    zcat "$file.gz" > "$file.gz.out" && cmp --silent "$file" "$file.gz.out"
+    brotli --decompress --stdout "$file.br" > "$file.br.out" && cmp --silent "$file" "$file.br.out"
+}
+
+test_file test/dist/app.js
+test_file test/dist/app.js.map
+test_file test/dist/style.css
+test_file test/dist/style.css.map
+test_file test/dist/images/vector.svg
