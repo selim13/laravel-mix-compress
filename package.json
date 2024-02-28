@@ -20,7 +20,7 @@
     },
     "dependencies": {
         "@gfx/zopfli": "^1.0.15",
-        "compression-webpack-plugin": "^11.0.0"
+        "compression-webpack-plugin": "^11.1.0"
     },
     "devDependencies": {
         "browser-sync": "^2.27.10",
